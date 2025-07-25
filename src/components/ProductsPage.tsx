@@ -194,7 +194,7 @@ const ProductsPage = () => {
       name: 'Tahu Nyonyor',
       category: 'Makanan',
       price: 'Rp 2.4 Juta',
-      image: 'https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/40%20Tahu%20Nyonyor-eoWYRiqLk3dMu81wS8JejVNlcXz0b2.jpg',
       heroImage: 'https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=1200',
       rating: 4.5,
       description: 'Tahu crispy dengan isian yang melimpah dan bumbu kacang yang gurih. Snack sehat dan mengenyangkan.',
