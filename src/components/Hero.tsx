@@ -28,7 +28,7 @@ const Hero = () => {
                 <ArrowRight className="ml-1 sm:ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button 
-                onClick={() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')}
+                onClick={() => window.open('https://www.youtube.com/@paketusahawaralaba', '_blank')}
                 className="border-2 border-purple-primary text-purple-primary px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full hover:bg-purple-primary hover:text-white transition-all duration-300 font-semibold text-sm sm:text-base md:text-lg flex items-center justify-center"
               >
                 <Play className="mr-1 sm:mr-2 w-4 h-4 sm:w-5 sm:h-5" />
