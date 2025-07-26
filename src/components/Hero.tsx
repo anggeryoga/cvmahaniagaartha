@@ -48,7 +48,7 @@ const Hero = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center mb-2">
                   <Users className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-purple-primary mr-1 sm:mr-2" />
-                  <span className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">500+</span>
+                  <span className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">9300+</span>
                 </div>
                 <p className="text-xs sm:text-sm text-gray-600">Pelanggan</p>
               </div>
