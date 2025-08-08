@@ -93,24 +93,25 @@
             background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             border: none;
-            border-radius: 25px;
-            padding: 15px 25px;
-            font-size: 16px;
+            border-radius: 20px;
+            padding: 12px 20px;
+            font-size: 15px;
             font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.4);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
             transition: all 0.3s ease;
             z-index: 1000;
             backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
+            height: 48px;
         }
 
         .floating-button:hover {
-            transform: translateX(-50%) translateY(-5px);
-            box-shadow: 0 15px 40px rgba(231, 76, 60, 0.6);
+            transform: translateX(-50%) translateY(-3px);
+            box-shadow: 0 12px 35px rgba(231, 76, 60, 0.6);
             background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
         }
 
@@ -119,8 +120,8 @@
         }
 
         .whatsapp-icon {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             fill: currentColor;
         }
 
@@ -251,7 +252,8 @@
 </head>
 
 <body>
-<div class="image-stack">
+
+   <div class="image-stack">
         <!-- Gambar pertama dengan prioritas tinggi (tidak lazy loading) -->
         <img id="img1"
             src="https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/Landing%20Page%20Es%20Teh%20Ibukota%20CMYK%201_4_11zon-NfjBSvb7vKLaLDuFSTt97dzdKDmMyV.jpg"
@@ -269,7 +271,7 @@
         <img id="img4" src="https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/Landing%20Page%20Es%20Teh%20Ibukota%20CMYK%204_3_11zon-9FETQBPHa9QEHiLiZuLCXP1iezv8D5.jpg" alt="Gambar 4" loading="lazy">
 
         <!-- Gambar kelima dengan lazy loading -->
-        <img id="img5" src="https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/Landing%20Page%20Es%20Teh%20Ibukota%20CMYK%205_1_11zon-lTWDBZB8FzLM39JCZruKuxFbuwh4Ga.jpg" alt="Gambar 5" loading="lazy">
+        <img id="img5" src="https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/Landing%20Page%20Es%20Teh%20Ibukota%20CMYK%205_1_11zon-lTWDBZB8FzLM39JCZruKuxFbuwh4Ga.jpg alt="Gambar 5" loading="lazy">
     </div>
 
     <!-- Floating Button -->
