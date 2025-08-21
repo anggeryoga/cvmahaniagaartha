@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, MessageCircle, Star, Package, Users, TrendingUp, X } from 'lucide-react';
-import { openWhatsAppWithRandomAdmin, openWhatsAppWithMessage } from '../utils/adminUtils';
+import { openProductPage, openWhatsAppWithRandomAdmin, openWhatsAppWithMessage } from '../utils/adminUtils';
 
 interface Product {
   id: string;
@@ -252,7 +252,7 @@ const ProductsPage = () => {
                 key={product.id}
                 className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer animate-slide-up"
                 style={{ animationDelay: `${index * 100}ms` }}
-                onClick={() => window.location.href = '#'}
+                onClick={() => openProductPage(product.name)}
               >
                 {/* Product Image */}
                 <div className="relative h-64 sm:h-72 md:h-80">
@@ -303,12 +303,11 @@ const ProductsPage = () => {
                       <button 
                         onClick={(e) => {
                           e.stopPropagation();
-                         openWhatsAppWithRandomAdmin(product.name);
+                          openProductPage(product.name);
                         }}
-                        className="bg-green-500 hover:bg-green-600 text-white px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 rounded-full transition-all duration-300 font-semibold flex items-center text-xs sm:text-sm"
+                        className="bg-purple-primary hover:bg-purple-700 text-white px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 rounded-full transition-all duration-300 font-semibold flex items-center text-xs sm:text-sm"
                       >
-                        <MessageCircle className="mr-1 w-3 h-3 sm:w-4 sm:h-4" />
-                        WhatsApp
+                        Lihat Detail
                       </button>
                     </div>
                   </div>
@@ -404,11 +403,10 @@ const ProductsPage = () => {
                     </div>
                     
                     <button
-                      onClick={() => openWhatsAppWithRandomAdmin(selectedProduct.name)}
-                      className="w-full bg-green-500 hover:bg-green-600 text-white px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 rounded-full transition-all duration-300 font-semibold text-xs sm:text-sm md:text-base flex items-center justify-center"
+                      onClick={() => openProductPage(selectedProduct.name)}
+                      className="w-full bg-purple-primary hover:bg-purple-700 text-white px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 rounded-full transition-all duration-300 font-semibold text-xs sm:text-sm md:text-base flex items-center justify-center"
                     >
-                      <MessageCircle className="mr-1 sm:mr-2 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-                      Konsultasi via WhatsApp
+                      Lihat Detail Produk
                     </button>
                   </div>
                 </div>
