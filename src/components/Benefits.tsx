@@ -40,7 +40,7 @@ const Benefits = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <p className="text-purple-primary font-semibold text-sm sm:text-base md:text-lg mb-2">Master Kuliner</p>
+          <p className="text-purple-primary font-semibold text-sm sm:text-base md:text-lg mb-2"></p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Kenapa Memilih Kami?
           </h2>
