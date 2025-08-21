@@ -5,7 +5,7 @@ const Benefits = () => {
   const benefits = [
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: 'Modal Murah',
+      title: 'Modal Terjangkau',
       description: 'Anda bisa memilih bisnis kuliner yang murah dengan modal yang terjangkau'
     },
     {
