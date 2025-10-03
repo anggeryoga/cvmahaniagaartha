@@ -5,20 +5,20 @@ const adminDetails = [
 ];
 
 const productUrls = {
-  "Chick Ichick": "https://paketusaha.web.id/p/chick-ichik",
-  "Chickuruyuk": "https://paketusaha.web.id/p/chikuruyuk",
-  "Esteh Ibukota": "https://paketusaha.web.id/p/esteh-ibukota",
-  "K-Mie": "https://paketusaha.web.id/p/k-mie",
-  "Kentang Gantenk": "https://paketusaha.web.id/p/kentang-gantenk",
-  "Kopi Ibukota": "https://paketusaha.web.id/p/kopi-ibukota",
-  "Mentoast": "https://paketusaha.web.id/p/mentoast",
-  "Merlumer": "https://paketusaha.web.id/p/merlumer",
-  "Mybestea": "https://paketusaha.web.id/p/mybestea",
-  "Nice Coffee": "https://paketusaha.web.id/p/nice-coffee",
-  "Raja Steak": "https://paketusaha.web.id/p/raja-steak",
-  "Seblak Express": "https://paketusaha.web.id/p/seblak-express",
-  "Tahu Nyonyor": "https://paketusaha.web.id/p/tahu-nyonyor",
-  "You Need Mie": "https://paketusaha.web.id/p/you-need-mie"
+  "Chick Ichick": "https://paketkemitraan.biz.id/p/chick-ichik",
+  "Chickuruyuk": "https://paketkemitraan.biz.id/p/chikuruyuk",
+  "Esteh Ibukota": "https://paketkemitraan.biz.id/p/esteh-ibukota",
+  "K-Mie": "https://paketkemitraan.biz.id/p/k-mie",
+  "Kentang Gantenk": "https://paketkemitraan.biz.id/p/kentang-gantenk",
+  "Kopi Ibukota": "https://paketkemitraan.biz.id/p/kopi-ibukota",
+  "Mentoast": "https://paketkemitraan.biz.id/p/mentoast",
+  "Merlumer": "https://paketkemitraan.biz.id/p/merlumer",
+  "Mybestea": "https://paketkemitraan.biz.id/p/mybestea",
+  "Nice Coffee": "https://paketkemitraan.biz.id/p/nice-coffee",
+  "Raja Steak": "https://paketkemitraan.biz.id/p/raja-steak",
+  "Seblak Express": "https://paketkemitraan.biz.id/p/seblak-express",
+  "Tahu Nyonyor": "https://paketkemitraan.biz.id/p/tahu-nyonyor",
+  "You Need Mie": "https://paketkemitraan.biz.id/p/you-need-mie"
 };
 
 
