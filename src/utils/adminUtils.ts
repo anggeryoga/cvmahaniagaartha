@@ -5,8 +5,8 @@ const adminDetails = [
 ];
 
 const productUrls = {
-  "Chick Ichik": "https://paketusaha.web.id/p/chick-ichik",
-  "Chikuruyuk": "https://paketusaha.web.id/p/chikuruyuk",
+  "Chick Ichick": "https://paketusaha.web.id/p/chick-ichik",
+  "Chickuruyuk": "https://paketusaha.web.id/p/chikuruyuk",
   "Esteh Ibukota": "https://paketusaha.web.id/p/esteh-ibukota",
   "K-Mie": "https://paketusaha.web.id/p/k-mie",
   "Kentang Gantenk": "https://paketusaha.web.id/p/kentang-gantenk",
