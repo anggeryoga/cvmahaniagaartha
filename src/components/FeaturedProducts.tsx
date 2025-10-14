@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
   const products = [
     {
       name: 'Mybestea',
-      price: 'Rp 2.5 Juta',
+      price: 'Rp 2.9 Juta',
       image: 'https://raw.githubusercontent.com/jafabogaartha/assets/refs/heads/main/My%20Bestea%20(2).jpeg',
       heroImage: 'https://images.pexels.com/photos/1346155/pexels-photo-1346155.jpeg?auto=compress&cs=tinysrgb&w=1200',
       category: 'Minuman',
