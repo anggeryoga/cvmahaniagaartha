@@ -2,14 +2,14 @@ import React from 'react';
 import { ArrowRight, Play, TrendingUp, Users, Star } from 'lucide-react';
 
 const Hero = () => {
-  // URL YouTube yang akan digunakan
-  const youtubeEmbedUrl = "https://www.youtube-nocookie.com/embed/mOqfH9kQ3eY?si=YAP3gUj8UmKxBz5O";
+  // URL YouTube yang akan digunakan (sudah diperbarui dengan parameter controls=0)
+  const youtubeEmbedUrl = "https://www.youtube.com/embed/mOqfH9kQ3eY?si=oOkGnYJn58Vl8GLR&controls=0";
 
   return (
     <section className="pt-16 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content (Teks dan Tombol Tetap Ada) */}
+          {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -65,12 +65,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - CLEAN YouTube Video */}
+          {/* Right Content - YouTube Video (16:9 Aspect Ratio) */}
           <div className="relative animate-float lg:block">
-            {/* Kontainer video dengan dimensi yang sama dengan sebelumnya */}
-            <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            
+            {/* Aspect Ratio Container (16:9) */}
+            <div className="relative pt-[56.25%] w-full rounded-3xl overflow-hidden shadow-2xl">
               
-              {/* Iframe YouTube */}
+              {/* Iframe YouTube harus berada di dalam container absolute */}
               <iframe 
                 src={youtubeEmbedUrl} 
                 title="YouTube video player" 
@@ -78,13 +79,13 @@ const Hero = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 allowFullScreen
-                className="w-full h-full object-cover" 
+                // Tambahkan kelas absolute dan inset-0 untuk mengisi kontainer rasio aspek
+                className="absolute inset-0 w-full h-full" 
               ></iframe>
               
-              {/* Semua overlay teks dan elemen dihapus dari sini */}
             </div>
 
-            {/* Floating Elements (Dipertahankan untuk efek visual) */}
+            {/* Floating Elements */}
             <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-purple-200 rounded-full opacity-60 animate-pulse"></div>
             <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-purple-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
           </div>
