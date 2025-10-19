@@ -62,35 +62,40 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Hero Image */}
-          <div className="relative animate-float lg:block">
-            <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
-              <img 
-                src="https://h2rsi9anqnqbkvkf.public.blob.vercel-storage.com/Feed%20IG%20Mie%20Kekinian%20-%2023-SHXuxauASxUbVVRqnL4yeXiVhoShxd.jpg" 
-                alt="Booth Usaha Modern" 
-                className="w-full h-full object-cover rounded-3xl shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl"></div>
-              
-              {/* Overlay Content */}
-              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 text-white">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6">
-                  <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center">
-                      <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-white text-sm sm:text-base md:text-lg">Tanpa Fee</h3>
-                      <p className="text-xs sm:text-sm text-white/80">Buka Usaha Tanpa Bagi Hasil dengan Keuntungan Melimpah</p>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs sm:text-sm text-white/80">Mulai dari</span>
-                    <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">Rp 2.5 Juta</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+{/* Right Content - Hero Video */}
+<div className="relative animate-float lg:block">
+  <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/mOqfH9kQ3eY?si=YAP3gUj8UmKxBz5O&autoplay=1&mute=1&loop=1&playlist=mOqfH9kQ3eY"
+      title="Booth Usaha Modern"
+      className="w-full h-full object-cover rounded-3xl"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl"></div>
+
+    {/* Overlay Content */}
+    <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+      <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6">
+        <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center">
+            <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
+          </div>
+          <div>
+            <h3 className="font-semibold text-white text-sm sm:text-base md:text-lg">Tanpa Fee</h3>
+            <p className="text-xs sm:text-sm text-white/80">Buka Usaha Tanpa Bagi Hasil dengan Keuntungan Melimpah</p>
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-xs sm:text-sm text-white/80">Mulai dari</span>
+          <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">Rp 2.5 Juta</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
             {/* Floating Elements */}
             <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-purple-200 rounded-full opacity-60 animate-pulse"></div>
