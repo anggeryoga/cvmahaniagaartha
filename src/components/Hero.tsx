@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="pt-16 bg-gradient-to-br from-purple-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
+          {/* Left Content (Teks dan Tombol Tetap Ada) */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -65,11 +65,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - YouTube Video */}
+          {/* Right Content - CLEAN YouTube Video */}
           <div className="relative animate-float lg:block">
+            {/* Kontainer video dengan dimensi yang sama dengan sebelumnya */}
             <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               
-              {/* Iframe YouTube sebagai pengganti gambar */}
+              {/* Iframe YouTube */}
               <iframe 
                 src={youtubeEmbedUrl} 
                 title="YouTube video player" 
@@ -77,38 +78,13 @@ const Hero = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 allowFullScreen
-                className="w-full h-full object-cover" // Memastikan iframe mengisi kontainer
+                className="w-full h-full object-cover" 
               ></iframe>
               
-              {/* Overlay Content (Dapat Dihapus karena kurang cocok di atas video, tapi dipertahankan jika perlu) */}
-              {/* Catatan: Overlay di atas iframe video mungkin menghalangi kontrol video. Saya sarankan menghapusnya atau memindahkannya jika itu adalah video yang ingin ditonton. */}
-              {/* Jika ingin tetap ada, pastikan z-index iframe di bawah overlay, atau atur interaksi klik.
-              
-              Karena ini adalah hero section, saya akan tetap mempertahankan elemen overlay, tetapi membuatnya transparan agar video tetap terlihat. Jika overlay ini mengganggu, Anda bisa menghapus div di bawah ini.
-              */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-3xl pointer-events-none"></div>
-
-              <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 text-white pointer-events-none">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 md:p-6">
-                  <div className="flex items-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/20 rounded-full flex items-center justify-center">
-                      <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-white text-sm sm:text-base md:text-lg">Tanpa Fee</h3>
-                      <p className="text-xs sm:text-sm text-white/80">Buka Usaha Tanpa Bagi Hasil dengan Keuntungan Melimpah</p>
-                    </div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs sm:text-sm text-white/80">Mulai dari</span>
-                    <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">Rp 2.5 Juta</span>
-                  </div>
-                </div>
-              </div>
-
+              {/* Semua overlay teks dan elemen dihapus dari sini */}
             </div>
 
-            {/* Floating Elements */}
+            {/* Floating Elements (Dipertahankan untuk efek visual) */}
             <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-purple-200 rounded-full opacity-60 animate-pulse"></div>
             <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-purple-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
           </div>
